@@ -12,15 +12,16 @@
 <body>
 <div class="container">
     <h1>Записи</h1>
+        <p><a href="/notes/add/">Добавить запись</a></p>
+    <div class="column">
+        {% for note in notes %}
+            <h3>{{ note.pk }}. {{ note.title }}</h3>
+            <p>Статус: ({{ note.status }})</p>
+            <div class="text">{{ note.text }}</div>
+            <hr>
+        {% endfor %}
+    </div>
     <p><a href="/notes/add/">Добавить запись</a></p>
-    {% for note in notes %}
-        <h3>{{ note.pk }}. {{ note.title }}</h3>
-        <p>Статус: ({{ note.status }})</p>
-        <p>{{ note.created_at }}</p>
-        <div>{{ note.text }}</div>
-    {% endfor %}
-    <p><a href="/notes/add/">Добавить запись</a></p>
-
 </div>
 </body>
 </html>

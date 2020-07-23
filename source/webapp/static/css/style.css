@@ -8,5 +8,25 @@
     margin: 0 auto;
     width: 100%;
     max-width: 900px;
+    text-align: left;
+}
+
+.column {
+    -webkit-column-count:2;
+    -moz-column-count:2;
+    column-count:2;
+ }
+
+h1 {
     text-align: center;
+    text-transform: uppercase;
+}
+
+.text {
+    text-align: center;
+}
+
+a {
+    font-weight: bold;
+    margin: auto;
 }
