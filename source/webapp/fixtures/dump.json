@@ -4,6 +4,7 @@
   "pk": 1,
   "fields": {
     "title": "New note 0",
+    "description": "lorem0",
     "text": "Text 0",
     "status": "new",
     "created_at": "2020-07-23T09:07:14.258Z",
@@ -15,6 +16,7 @@
   "pk": 2,
   "fields": {
     "title": "New note 1",
+    "description": "lorem1",
     "text": "Text 1",
     "status": "new",
     "created_at": "2020-07-23T09:07:14.336Z",
@@ -26,6 +28,7 @@
   "pk": 3,
   "fields": {
     "title": "New note 2",
+    "description": "lorem2",
     "text": "Text 2",
     "status": "new",
     "created_at": "2020-07-23T09:07:14.424Z",
@@ -37,6 +40,7 @@
   "pk": 4,
   "fields": {
     "title": "New note 3",
+    "description": "lorem3",
     "text": "Text 3",
     "status": "new",
     "created_at": "2020-07-23T09:07:14.501Z",
@@ -48,6 +52,7 @@
   "pk": 5,
   "fields": {
     "title": "New note 4",
+    "description": "lorem4",
     "text": "Text 4",
     "status": "new",
     "created_at": "2020-07-23T09:07:14.579Z",
@@ -59,6 +64,7 @@
   "pk": 6,
   "fields": {
     "title": "This is hte fourth post!",
+    "description": "lorem5",
     "text": "\u043c\u0447\u043c\u0447\u043c\u0447\u0441\u043c\u0441\u0447\u043c\u0441\u043c",
     "status": "new",
     "created_at": "2020-07-23T11:10:21.688Z",
@@ -70,6 +76,7 @@
   "pk": 7,
   "fields": {
     "title": "This is hte fourth post!",
+    "description": "lorem6",
     "text": "\u043c\u0447\u043c\u0447\u043c\u0447\u0441\u043c\u0441\u0447\u043c\u0441\u043c",
     "status": "in_progress",
     "created_at": "2020-07-23T11:11:54.174Z",
@@ -81,6 +88,7 @@
   "pk": 8,
   "fields": {
     "title": "\u0417\u0430\u043f\u0438\u0441\u044c\u0448\u043c\u0430\u043f\u0438\u0441\u044c",
+    "description": "lorem7",
     "text": "\u0420\u0430\u0437\u0434\u0432\u0430\u0422\u0440\u0438\u0447\u0435\u0442\u044b\u0440\u0435\u041f\u044f\u0442\u044c",
     "status": "new",
     "created_at": "2020-07-23T11:26:18.550Z",
@@ -92,6 +100,7 @@
   "pk": 9,
   "fields": {
     "title": "Zapis",
+    "description": "lorem8",
     "text": "jhhjkfdsjkfjkdsjhfhjdsjhfdsjhhfdsjhhfdsjhhjhjsdfjhjsdjhdhjkshjfshjf jhfdjhfdshjf hj jhdsafhdsjk h jkfdshj dh fhjfhjkjksd h hfdshkjhjkf  sd",
     "status": "new",
     "created_at": "2020-07-23T12:02:37.819Z",
@@ -103,6 +112,7 @@
   "pk": 10,
   "fields": {
     "title": "Jork",
+    "description": "lorem9",
     "text": "fdfdsjkfdsjkfdlsjn jfdsfkjkl sjnknj jkgfhghdsfk,fjg kjsjn fksd,ksnfvs,kkms,f mdsl;fm,dsl;fd m,adsld asl;kd asfdmnsdlkfjfjknsdkfdkasl;k gjnfjkh gsdfjk jal; k,fhsdjkhslkf dl;kf ",
     "status": "new",
     "created_at": "2020-07-23T12:08:14.039Z",
@@ -114,6 +124,7 @@
   "pk": 11,
   "fields": {
     "title": "sdsgsgdsgf",
+    "description": "lorem10",
     "text": "gfhgfhfg fgjgyhdfg  fdfsdsadfs  fdgdfg gfdgfd hgfh ",
     "status": "in_progress",
     "created_at": "2020-07-26T08:38:50.304Z",

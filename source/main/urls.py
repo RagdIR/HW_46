@@ -19,7 +19,8 @@ from webapp.views import index_view, note_create_view, note_view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', index_view),
-    path('notes/add/', note_create_view),
-    path('note/', note_view)
+    path('', index_view, name='index'),
+    path('note/<int:pk>/', note_view, name='note_view'),
+    path('notes/add/', note_create_view, name='note_create'),
+
 ]

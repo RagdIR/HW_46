@@ -1,18 +1,10 @@
-{% load staticfiles %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="{% static "css/style.css" %}">
-    <title>Просмотр добавленной записи</title>
-</head>
-<body>
-<div class="container">
-    <h1>{{ note.title }}</h1>
-    <p>{{ note.text }}</p>
-    <p>{{ note.created_at }}</p><br>
+{% extends 'base.html' %}
 
-<p><a href="/">На главную</a></p>
-</div>
-</body>
-</html>
+{% block title %}View note{% endblock %}
+
+{% block content %}
+    <h1>{{ note.title }}</h1><br>
+    <h2>{{ note.description }}</h2>
+    <p>{{ note.text }}</p><br>
+    <p>{{ note.created_at }}</p><br>
+{% endblock %}

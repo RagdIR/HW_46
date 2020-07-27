@@ -1,37 +1,30 @@
-{% load staticfiles %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="{% static "css/style.css" %}">
-    <title>Create</title>
+{% extends 'base.html' %}
 
-</head>
-<body>
-<div class="container">
+{% block title %}Create note{% endblock %}
 
-<h1>Создать запись</h1>
+{% block content %}
+    <h1>Create Note</h1>
 
-<form action="/notes/add/" method="post">
-    {% csrf_token %}
-   
-    <label>Название:</label><br/>
-    <input type="text" name="title"/><br/>
-   
-    <label>Данные:</label><br/>
-    <textarea name="content"></textarea><br/>
-   
-    <select name="status">
-      <option value="new">Новая</option>
-      <option value="in_progress">В процессе</option>
-      <option value="done">Сделано</option>
-    </select><br/>
-    <br/>
-    <input type="submit" value="Создать"/>
+    <form action="{% url "note_create" %}" method="post">
+        {% csrf_token %}
 
+        <label>Title:</label><br/>
+        <input type="text" name="title"/><br/>
 
-    <p><a href="/">На главную</a></p>
-</form>
-</div>
-</body>
-</html>
+        <label>Description:</label><br/>
+        <textarea name="text"></textarea><br/>
+
+        <label>Text:</label><br/>
+        <textarea name="text"></textarea><br/>
+
+        <label for="id-status">Status:</label><br/>
+        <select name="status" id="id-status">
+            {% for value, label in status_choices %}
+                <option value="{{ value }}">{{ label }}</option>
+            {% endfor %}
+        </select><br/>
+
+        <br/>
+        <input type="submit" value="Send"/>
+    </form>
+{% endblock %}
