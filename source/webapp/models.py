@@ -12,8 +12,7 @@ class Note(models.Model):
     description = models.TextField(max_length=500, null=True, blank=True, verbose_name='Описание')
     text = models.TextField(max_length=3000, null=False, blank=False, verbose_name='Текст')
     status = models.CharField(max_length=20, choices=STATUS_CHOICES, default='new', verbose_name="Новая")
-    created_at = models.DateTimeField(auto_now_add=True, verbose_name='Время создания')
-    updated_at = models.DateTimeField(auto_now=True, verbose_name='Время изменения')
+    todo_at = models.DateTimeField(auto_now_add=False, null=True, verbose_name='Время завершения задачи')
 
 
     def __str__(self):

@@ -2,9 +2,14 @@
 
 {% block title %}View note{% endblock %}
 
+{% block menu %}
+    <li><a href="{% url 'note_update' note.pk %}">Update</a></li>
+    <li><a href="{% url 'note_delete' note.pk %}">Delete</a></li>
+{% endblock %}
+
 {% block content %}
     <h1>{{ note.title }}</h1><br>
     <h2>{{ note.description }}</h2>
     <p>{{ note.text }}</p><br>
-    <p>{{ note.created_at }}</p><br>
+    <p>{{ note.todo_at|date:"d.m.Y" }}</p><br>
 {% endblock %}
